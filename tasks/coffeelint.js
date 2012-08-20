@@ -11,10 +11,8 @@ module.exports = function(grunt) {
           done(false);
         }
         else {
-          done(false);
+          done(true);
         }
-
-
       });
   });
 
