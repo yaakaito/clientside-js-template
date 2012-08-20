@@ -3,11 +3,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-coffee');
   grunt.loadNpmTasks('grunt-compass');
   grunt.loadNpmTasks('grunt-jasmine-task');
+  
+  grunt.loadTasks('tasks');
 
   grunt.initConfig({
     lint : {
       files : [
         'lib/javascript/*.js'
+        , 'tasks/coffeelint.js'
       ]
     }
     , concat : {
@@ -23,6 +26,13 @@ module.exports = function(grunt) {
           'lib/coffee/*.coffee'
         ]
         , dest : 'build/'
+      }
+    }
+    , coffeelint : {
+      all : { 
+        files : [
+          'lib/coffee/*.coffee'
+        ]
       }
     }
     , jasmine: {
