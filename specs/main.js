@@ -17,7 +17,7 @@ require([
 	'jasmine',
     'jasmine.html',
     'jasmine.helper',
-    'spec/PlayerSpec'
+    'spec/sample_spec'
   ],
   function (jasmine) {
       var jasmineEnv = jasmine.getEnv();

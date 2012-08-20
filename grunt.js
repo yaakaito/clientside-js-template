@@ -26,8 +26,7 @@ module.exports = function(grunt) {
       }
     }
     , jasmine: {
-        all : ['test/index.html']
-        //all: ['specs/SpecRunner.html']
+        all : ['specs/index.html']
     }
     , min : {
       'public/javascript/build-javascript.mim.js' : [
