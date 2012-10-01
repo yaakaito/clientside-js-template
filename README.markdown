@@ -1,0 +1,5 @@
+# Install
+
+* grunt
+* phamtomjs
+* compass
